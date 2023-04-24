@@ -44,7 +44,7 @@ plt.ylabel('Mean Inflation Rate')
 plt.title('Mean Inflation Rate of vegetable')
 plt.show()
 
-# print the inflation rate of fruits
+# print the inflation rate of vegetable
 print('Inflation rate of vegetable:')
 print(inflation_df)
 
@@ -93,7 +93,7 @@ df = pd.read_csv('data.csv')
 
 # convert the 'date' column to datetime format
 df['date'] = pd.to_datetime(df['date'], format='%Y-%m-%d')
-fruit_type = input("Enter the type of fruit to check its inflation rate: ")
+fruit_type = input("Enter the type of vegetable to check its inflation rate: ")
 # select only the rows that correspond to fruits
 vegetable_df = df[df['item'] == fruit_type]
 
@@ -130,6 +130,6 @@ plt.ylabel('Mean Inflation Rate')
 plt.title('Mean Inflation Rate of vegetable')
 plt.show()
 
-# print the inflation rate of fruits
-print('Inflation rate of fruits:')
+# print the inflation rate of vegetable
+print('Inflation rate of vegetable:')
 print(inflation_df)
