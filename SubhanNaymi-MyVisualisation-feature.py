@@ -99,7 +99,7 @@ vegetable_df = df[df['item'] == fruit_type]
 
 # group the data by year and item
 grouped = vegetable_df.groupby([pd.Grouper(key='date', freq='Y'), 'item'])
-# Ask user for input on fruit type
+# Ask user for input on vegetable type
 
 # calculate the yearly inflation rate for each group
 inflation_rates = []
